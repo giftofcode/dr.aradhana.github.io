@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans Devanagari", Arial, sans-serif;
+  background: #fff8ee;
+  color: #3b2415;
+  line-height: 1.7;
+}
+
+header {
+  background: #5c1f1f;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(92,31,31,0.75), rgba(92,31,31,0.75)),
+              url("images/dr-aradhana/PLACEHOLDER-MAIN-PHOTO.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 55px;
+  margin: 15px 0;
+}
+
+.tagline {
+  font-size: 24px;
+  color: #ffd98a;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: #ffd98a;
+  color: #4b1e1e;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  padding: 70px 10%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 38px;
+  margin-bottom: 25px;
+  color: #7a2d2d;
+}
+
+.soft {
+  background: #f7ead7;
+}
+
+.timeline,
+.grid,
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card,
+.photo-box {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  font-size: 20px;
+}
+
+.gallery-buttons button,
+.lecture button {
+  padding: 12px 22px;
+  margin: 8px;
+  border: none;
+  border-radius: 25px;
+  background: #7a2d2d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.photo-box {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #b88452;
+}
+
+.lecture input {
+  padding: 14px;
+  width: 260px;
+  border-radius: 10px;
+  border: 2px solid #7a2d2d;
+  margin: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  background: #5c1f1f;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .section h2 {
+    font-size: 30px;
+  }
+}
